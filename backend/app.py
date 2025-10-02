@@ -1,9 +1,9 @@
 from flask import Flask, request, jsonify
 from game import Game
 
-app = Flask(__name__)
+app = Flask(__name__)#create the app (flask)
 
-games = {}  # simple in-memory store
+games = {}  # simple in-memory store for games
 
 @app.route("/")
 def index():
